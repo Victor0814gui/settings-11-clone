@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29215.179
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "storagenuget", "storagenuget\storagenuget.vcxproj", "{16482F02-2F20-4C4B-B5F3-D3158A2F104F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RNSensitiveInfoCPP", "..\node_modules\react-native-sensitive-info\windows\RNSensitiveInfoCPP\RNSensitiveInfoCPP.vcxproj", "{471024F1-CD6D-4F1E-A6C7-0037152C850E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Debug|ARM64 = Debug|ARM64
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+		Release|ARM64 = Release|ARM64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{16482F02-2F20-4C4B-B5F3-D3158A2F104F}.Debug|ARM64.ActiveCfg = Debug|ARM64
+		{16482F02-2F20-4C4B-B5F3-D3158A2F104F}.Debug|ARM64.Build.0 = Debug|ARM64
+		{16482F02-2F20-4C4B-B5F3-D3158A2F104F}.Debug|ARM64.Deploy.0 = Debug|ARM64
+		{16482F02-2F20-4C4B-B5F3-D3158A2F104F}.Debug|x64.ActiveCfg = Debug|x64
+		{16482F02-2F20-4C4B-B5F3-D3158A2F104F}.Debug|x64.Build.0 = Debug|x64
+		{16482F02-2F20-4C4B-B5F3-D3158A2F104F}.Debug|x64.Deploy.0 = Debug|x64
+		{16482F02-2F20-4C4B-B5F3-D3158A2F104F}.Debug|x86.ActiveCfg = Debug|Win32
+		{16482F02-2F20-4C4B-B5F3-D3158A2F104F}.Debug|x86.Build.0 = Debug|Win32
+		{16482F02-2F20-4C4B-B5F3-D3158A2F104F}.Debug|x86.Deploy.0 = Debug|Win32
+		{16482F02-2F20-4C4B-B5F3-D3158A2F104F}.Release|ARM64.ActiveCfg = Release|ARM64
+		{16482F02-2F20-4C4B-B5F3-D3158A2F104F}.Release|ARM64.Build.0 = Release|ARM64
+		{16482F02-2F20-4C4B-B5F3-D3158A2F104F}.Release|ARM64.Deploy.0 = Release|ARM64
+		{16482F02-2F20-4C4B-B5F3-D3158A2F104F}.Release|x64.ActiveCfg = Release|x64
+		{16482F02-2F20-4C4B-B5F3-D3158A2F104F}.Release|x64.Build.0 = Release|x64
+		{16482F02-2F20-4C4B-B5F3-D3158A2F104F}.Release|x64.Deploy.0 = Release|x64
+		{16482F02-2F20-4C4B-B5F3-D3158A2F104F}.Release|x86.ActiveCfg = Release|Win32
+		{16482F02-2F20-4C4B-B5F3-D3158A2F104F}.Release|x86.Build.0 = Release|Win32
+		{16482F02-2F20-4C4B-B5F3-D3158A2F104F}.Release|x86.Deploy.0 = Release|Win32
+		{471024F1-CD6D-4F1E-A6C7-0037152C850E}.Debug|x64.ActiveCfg = Debug|x64
+		{471024F1-CD6D-4F1E-A6C7-0037152C850E}.Debug|x64.Build.0 = Debug|x64
+		{471024F1-CD6D-4F1E-A6C7-0037152C850E}.Debug|x86.ActiveCfg = Debug|Win32
+		{471024F1-CD6D-4F1E-A6C7-0037152C850E}.Debug|x86.Build.0 = Debug|Win32
+		{471024F1-CD6D-4F1E-A6C7-0037152C850E}.Debug|ARM64.ActiveCfg = Debug|ARM64
+		{471024F1-CD6D-4F1E-A6C7-0037152C850E}.Debug|ARM64.Build.0 = Debug|ARM64
+		{471024F1-CD6D-4F1E-A6C7-0037152C850E}.Release|x64.ActiveCfg = Release|x64
+		{471024F1-CD6D-4F1E-A6C7-0037152C850E}.Release|x64.Build.0 = Release|x64
+		{471024F1-CD6D-4F1E-A6C7-0037152C850E}.Release|x86.ActiveCfg = Release|Win32
+		{471024F1-CD6D-4F1E-A6C7-0037152C850E}.Release|x86.Build.0 = Release|Win32
+		{471024F1-CD6D-4F1E-A6C7-0037152C850E}.Release|ARM64.ActiveCfg = Release|ARM64
+		{471024F1-CD6D-4F1E-A6C7-0037152C850E}.Release|ARM64.Build.0 = Release|ARM64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D43FAD39-F619-437D-BB40-04A3982ACB6A}
+	EndGlobalSection
+EndGlobal

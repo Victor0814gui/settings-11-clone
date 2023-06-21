@@ -1,3 +1,4 @@
+import React, {useEffect, useState} from 'react';
 import {
   View,
   Text,
@@ -6,30 +7,30 @@ import {
   StyleSheet,
   FlatList,
 } from 'react-native';
-import {useEffect, useState} from 'react';
-import {Navbar} from '../components/navbar';
-import {useStorageProviderContext} from '../contexts/storage-context';
-import {Section} from '../components/section';
+import {Section} from '../../components/section';
 
 const options = [
   {
     name: 'Display',
+    routeName: 'Display',
     description: 'Monitors, brightness, night light, display profile',
     icon: '\uE7F4',
   },
   {
     name: 'Sound',
+    routeName: 'Sound',
     description: 'Volume levels, output, sound devices',
     icon: '\uE767',
   },
   {
     name: 'Notifications',
+    routeName: 'Notifications',
     description: 'Alerts from apps and system',
     icon: '\uEA8F',
   },
 ];
 
-export function SystemScreen() {
+export function SystemScreen({navigation}) {
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
 
@@ -41,17 +42,22 @@ export function SystemScreen() {
         <View style={styles.content}>
           <View style={styles.navigationPivotContainer}>
             <Text style={styles.navigationPivotContainerText}>System</Text>
-            <Text style={[styles.icon, styles.iconLarge]}>&#xE76C;</Text>
+            {/* <Text style={[styles.icon, styles.iconLarge]}>&#xE76C;</Text>
             <Text
               style={[
                 styles.navigationPivotContainerText,
                 styles.navigationPivotContainerTextActive,
               ]}>
               Your Microsoft account
-            </Text>
+            </Text> */}
           </View>
           {options.map(e => (
-            <Section description={e.description} title={e.name} icon={e.icon} />
+            <Section
+              onPress={() => navigation.navigate(e.routeName)}
+              description={e.description}
+              title={e.name}
+              icon={e.icon}
+            />
           ))}
         </View>
       </View>

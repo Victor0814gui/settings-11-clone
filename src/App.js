@@ -2,16 +2,21 @@ import {useState} from 'react';
 import {View, Text, StyleSheet} from 'react-native';
 import {Routes} from './screens';
 import {Pressable} from 'react-native';
+import {Colors} from './theme/colors';
+import {NavigationContainer} from '@react-navigation/native';
 
 export function App() {
   return (
     <View style={styles.container}>
-      <View style={styles.titleBar}>
-        <Pressable style={styles.backButton}>
-          <Text style={styles.icon}>&#xEC52;</Text>
-        </Pressable>
-      </View>
-      <Routes />
+      <NavigationContainer
+        theme={{
+          colors: {
+            background: Colors.primary,
+            text: Colors.text,
+          },
+        }}>
+        <Routes />
+      </NavigationContainer>
     </View>
   );
 }
@@ -19,20 +24,6 @@ export function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#f0f3f9',
-  },
-  titleBar: {
-    height: 32,
-  },
-  backButton: {
-    height: 32,
-    width: 52,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  icon: {
-    fontFamily: 'Segoe MDL2 Assets',
-    fontSize: 18,
-    color: '#333333',
+    backgroundColor: Colors.primary,
   },
 });

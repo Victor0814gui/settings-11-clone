@@ -2,27 +2,31 @@ import React, {useState} from 'react';
 import {View, Text} from 'react-native';
 import {StyleSheet} from 'react-native';
 import {Colors} from '../../theme/colors';
+import {Pressable} from 'react-native';
 
 export function Section({
   title = 'Microsoft 365 Family',
   description = 'Premiun office apps, OneDrive cloud storage, and more',
   icon = '\uE770',
+  ...rest
 }) {
   const [onHover, setOnHover] = useState(false);
   const onMouseEnter = () => setOnHover(true);
   const onMouseLeave = () => setOnHover(false);
   return (
-    <View
-      style={styles.section}
-      onMouseEnter={onMouseEnter}
-      onMouseLeave={onMouseLeave}>
-      <Text style={[styles.icon]}>{icon}</Text>
-      <View style={{marginLeft: 12}}>
-        <Text style={styles.sectionContentTitle}>{title}</Text>
-        <Text style={styles.sectionContentDescription}>{description}</Text>
+    <Pressable {...rest}>
+      <View
+        style={styles.section}
+        onMouseEnter={onMouseEnter}
+        onMouseLeave={onMouseLeave}>
+        <Text style={[styles.icon]}>{icon}</Text>
+        <View style={{marginLeft: 12}}>
+          <Text style={styles.sectionContentTitle}>{title}</Text>
+          <Text style={styles.sectionContentDescription}>{description}</Text>
+        </View>
+        <Text style={[styles.icon, styles.iconSmall]}>{'\uE76C'}</Text>
       </View>
-      <Text style={[styles.icon, styles.iconSmall]}>{'\uE76C'}</Text>
-    </View>
+    </Pressable>
   );
 }
 

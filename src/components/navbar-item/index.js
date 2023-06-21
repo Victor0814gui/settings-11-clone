@@ -34,8 +34,8 @@ export const NavbarItem = ({active = false, icon, item, index, ...rest}) => {
   const onMouseLeave = () => setOnHover(false);
 
   useEffect(() => {
-    // onPressIn();
-    return () => onPressOut();
+    onPressIn();
+    // return () => onPressOut();
   }, []);
 
   return (

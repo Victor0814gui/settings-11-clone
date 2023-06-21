@@ -13,7 +13,7 @@ import {
 
 // import {useStorageProviderContext} from '../../contexts/storage-context';
 import {NavbarItem} from '../navbar-item';
-import {itemsData} from '../../screens';
+import {drawerRoutes} from '../../configs/drawer';
 import {Colors} from '../../theme/colors';
 
 const uri = 'https://avatars.githubusercontent.com/u/2254731?v=4';
@@ -34,7 +34,7 @@ export function Navbar({navigation, state}) {
   return (
     <View style={styles.container}>
       <FlatList
-        data={itemsData}
+        data={drawerRoutes}
         ListHeaderComponent={
           <View style={styles.header}>
             <View style={styles.headerProfileContainer}>

@@ -5,4 +5,5 @@ export const Colors = {
   heading: '',
   title: '',
   description: '',
+  primary: '#f0f3f9',
 };

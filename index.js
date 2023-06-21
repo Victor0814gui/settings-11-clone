@@ -1,9 +1,9 @@
 /**
  * @format
  */
-
+import 'react-native-gesture-handler';
 import {AppRegistry} from 'react-native';
 import {name as appName} from './app.json';
-import {StorageContextProvider} from './src/contexts/storage-context';
+import {App} from './src/App';
 
-AppRegistry.registerComponent(appName, () => StorageContextProvider);
+AppRegistry.registerComponent(appName, () => App);

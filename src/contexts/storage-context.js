@@ -2,7 +2,7 @@ import {createContext, useContext, useEffect, useState} from 'react';
 
 import {v4 as uuidV4} from 'uuid';
 import SInfo from 'react-native-sensitive-info';
-import {App} from '../App';
+import {AccountScreen} from '../screens/applications-screen';
 
 const StorageContext = createContext({});
 
@@ -68,7 +68,7 @@ const StorageContextProvider = () => {
         handlerCreateNewNote,
         getStorageItems,
       }}>
-      <App />
+      <AccountScreen />
     </StorageContext.Provider>
   );
 };

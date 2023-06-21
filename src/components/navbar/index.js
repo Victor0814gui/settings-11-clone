@@ -11,58 +11,25 @@ import {
   Image,
 } from 'react-native';
 
-import {useStorageProviderContext} from '../../contexts/storage-context';
-
-const itemsData = [
-  {
-    routeName: 'System',
-    icon: require('../../assets/settings.png'),
-  },
-  {
-    routeName: 'Bluetooth & Devices',
-    icon: '',
-  },
-  {
-    routeName: 'Personalization',
-    icon: '',
-  },
-  {
-    routeName: 'Apps',
-    icon: '',
-  },
-  {
-    routeName: 'Accounts',
-    icon: '',
-  },
-  {
-    routeName: 'Time e Language',
-    icon: '',
-  },
-  {
-    routeName: 'Gaming',
-    icon: '',
-  },
-  {
-    routeName: 'Accessibility',
-    icon: '',
-  },
-  {
-    routeName: 'Privacity & Security',
-    icon: '',
-  },
-];
+// import {useStorageProviderContext} from '../../contexts/storage-context';
+import {NavbarItem} from '../navbar-item';
+import {itemsData} from '../../screens';
+import {Colors} from '../../theme/colors';
 
 const uri = 'https://avatars.githubusercontent.com/u/2254731?v=4';
 
-export function Navbar() {
-  const {allItem} = useStorageProviderContext();
+export function Navbar({navigation, state}) {
+  console.log(state);
 
-  const handlerDeleteNode = async id => {
-    await RNSInfo.deleteItem(id, {
-      sharedPreferencesName: 'mySharedPrefs',
-      keychainService: 'myKeychain',
-    });
-  };
+  const renderItem = ({item, index}) => (
+    <NavbarItem
+      active={state.index === index}
+      onPress={() => navigation.navigate(item.route)}
+      item={item}
+      index={index}
+      icon={item.icon}
+    />
+  );
 
   return (
     <View style={styles.container}>
@@ -86,32 +53,15 @@ export function Navbar() {
               </View>
             </View>
             <TextInput
+              multiline={true}
               placeholder="Search"
               placeholderTextColor={'#888888'}
               style={styles.input}
             />
           </View>
         }
-        renderItem={({item, index}) => (
-          <View style={[styles.item, index === 4 && styles.itemSelected]}>
-            <View
-              style={[
-                styles.square,
-                index !== 4 && {backgroundColor: 'transparent'},
-              ]}
-            />
-            <View style={styles.itemContent}>
-              <Image
-                resizeMode="contain"
-                style={styles.icon}
-                source={itemsData[0].icon}
-              />
-              <Text numberOfLines={1} style={styles.itemTitle}>
-                {item.routeName}
-              </Text>
-            </View>
-          </View>
-        )}
+        renderItem={renderItem}
+        keyExtractor={(_, index) => `${index}`}
       />
     </View>
   );
@@ -121,7 +71,9 @@ const iconSize = 22;
 const avatarSize = 62;
 
 const styles = StyleSheet.create({
-  header: {},
+  header: {
+    marginBottom: 21,
+  },
   headerProfileContainer: {
     flexDirection: 'row',
     alignItems: 'center',
@@ -147,17 +99,19 @@ const styles = StyleSheet.create({
   },
   input: {
     backgroundColor: '#ffffff',
-    borderColor: '#ced4d8',
+    borderColor: Colors.inputBorder,
     borderBottomWidth: 2,
     borderRightWidth: 1,
     borderLeftWidth: 1,
     borderRadius: 7,
     fontWeight: '500',
+    color: Colors.text,
   },
   container: {
-    flex: 1,
+    // flex: 1,
     paddingHorizontal: 12,
-    maxWidth: 300,
+    width: 300,
+    maxWidth: 320,
   },
   item: {
     height: 38,

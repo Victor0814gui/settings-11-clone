@@ -2,6 +2,7 @@
 
 #include "winrt/Microsoft.ReactNative.h"
 
+
 namespace winrt::storagenuget::implementation
 {
     struct ReactPackageProvider : winrt::implements<ReactPackageProvider, winrt::Microsoft::ReactNative::IReactPackageProvider>

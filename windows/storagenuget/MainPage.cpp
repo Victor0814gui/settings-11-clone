@@ -38,7 +38,7 @@ namespace winrt::storagenuget::implementation
 
         // Title bar button foreground colors. Alpha must be 255.
         titleBar.ButtonForegroundColor(ColorHelper::FromArgb(255, 232, 211, 162));
-        titleBar.ButtonHoverForegroundColor(ColorHelper::FromArgb(255, 255, 255, 255));
+        titleBar.ButtonHoverForegroundColor(ColorHelper::FromArgb(0, 0, 0, 255));
         titleBar.ButtonPressedForegroundColor(ColorHelper::FromArgb(255, 54, 60, 116));
         titleBar.ButtonInactiveForegroundColor(ColorHelper::FromArgb(255, 232, 211, 162));
         

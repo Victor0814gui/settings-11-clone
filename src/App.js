@@ -4,6 +4,7 @@ import {Routes} from './screens';
 import {Pressable} from 'react-native';
 import {Colors} from './theme/colors';
 import {NavigationContainer} from '@react-navigation/native';
+import {SplashScreen} from './screens/splash-screen';
 
 export function App() {
   return (
@@ -15,7 +16,7 @@ export function App() {
             text: Colors.text,
           },
         }}>
-        <Routes />
+        <SplashScreen />
       </NavigationContainer>
     </View>
   );

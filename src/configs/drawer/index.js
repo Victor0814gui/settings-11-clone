@@ -12,6 +12,7 @@ import {PrivacityAndSecurityScreen} from '../../screens/privacity-and-security-s
 import {SoundScreen} from '../../screens/system-screen/screen/sound-screen';
 import {NotificationsScreen} from '../../screens/system-screen/screen/notifications-screen';
 import {DisplayScreen} from '../../screens/system-screen/screen/display-screen';
+import {SplashScreen} from '../../screens/splash-screen';
 
 const Drawer = createDrawerNavigator();
 

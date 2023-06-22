@@ -5,16 +5,12 @@ import {Navbar} from '../components/navbar';
 import {Colors} from '../theme/colors';
 import {screensDrawer} from '../configs/drawer';
 import {StyleSheet} from 'react-native';
-import {Pressable} from 'react-native';
-import {View} from 'react-native';
-import {Text} from 'react-native';
 import {TitleBar} from '../components/titlebar';
 
 const Drawer = createDrawerNavigator();
 
 export function Routes() {
   const screens = screensDrawer();
-  const navigation = useNavigation();
   return (
     <>
       <TitleBar />

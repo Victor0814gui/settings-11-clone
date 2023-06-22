@@ -185,6 +185,7 @@
   <ItemGroup>
     <None Include="PropertySheet.props" />
     <None Include="storagenuget_TemporaryKey.pfx" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="readme.txt" />

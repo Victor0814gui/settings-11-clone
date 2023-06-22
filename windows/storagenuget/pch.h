@@ -28,9 +28,11 @@
 #include "winrt/Windows.Storage.Pickers.h"
 #include "winrt/Windows.Storage.Pickers.Provider.h"
 
+// lottie imports
+
 #include <winrt/Microsoft.UI.Xaml.Automation.Peers.h>
 #include <winrt/Microsoft.UI.Xaml.Controls.Primitives.h>
 #include <winrt/Microsoft.UI.Xaml.Controls.h>
 #include <winrt/Microsoft.UI.Xaml.Media.h>
 #include <winrt/Microsoft.UI.Xaml.XamlTypeInfo.h>
-using namespace winrt::Windows::Foundation;
+// using namespace winrt::Windows::Foundation;

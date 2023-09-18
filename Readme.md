@@ -1,48 +1,35 @@
 <h1 align="center">
-  <img alt="podcastr" title="podcastr" src=".github/preview.png" />
+  <img alt="settings" title="settings clone" src=".github/preview.png" />
 </h1>
 
 <p align="center">
-  <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=8257E5&labelColor=000000">
+  <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=ff9e22&labelColor=000000">
 
- <img src="https://img.shields.io/static/v1?label=NLW&message=05&color=8257E5&labelColor=000000" alt="NLW 05" />
+ <img src="https://img.shields.io/static/v1?label=version&message=1&color=ff9e22&labelColor=000000" alt="version" />
 </p>
 
 <br>
 
-<p align="center">
-  <img alt="Podcastr" src=".github/podcastr.png" width="100%">
-</p>
+## ✨Technologies
 
-## ✨ Tecnologias
+This project was developed using the following technologies:
 
-Esse projeto foi desenvolvido com as seguintes tecnologias:
-
-- [React](https://reactjs.org)
-- [Next.js](https://nextjs.org/)
+- [react-native](https://reactnative.dev/)
+- [react-native-windows](https://microsoft.github.io/react-native-windows/)
 - [TypeScript](https://www.typescriptlang.org/)
+- [@react-navigation](https://reactnavigation.org/)
 
-## 💻 Projeto
+## 💻 Project
 
-O podcastr é um app para reprodução de episódios em áudio do seu podcast favorito.
+The Settings clone is a study app, replicating as closely as possible the functionalities of the original application with the aim of providing applications with a better interactive experience to Windows clients.
 
-## 🔖 Layout
+## 🚀 How to Run
 
-Você pode visualizar o layout do projeto através [desse link](https://www.figma.com/file/UwFEntsHpHYJlHNQAQr4gA/Podcastr/duplicate). É necessário ter conta no [Figma](http://figma.com/) para acessá-lo.
+Clone the repository
+- Install the dependencies with `yarn`
+- Start the fake API with `yarn windows`
+- Start the server with `yarn start`
+- 
+## 📄 License
 
-## 🚀 Como executar
-
-- Clone o repositório
-- Instale as dependências com `yarn`
-- Inicie a fake api com `yarn server`
-- Inicie o servidor com `yarn dev`
-
-Agora você pode acessar [`localhost:3000`](http://localhost:3000) do seu navegador.
-
-## 📄 Licença
-
-Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
-
----
-
-Feito com ♥ by Rocketseat 👋🏻 [Participe da nossa comunidade!](https://discordapp.com/invite/gCRAFhc)
+Made with ♥ by Victor0814gui
